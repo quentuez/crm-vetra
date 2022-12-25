@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Used Technologies
+
+1. Tailwind CSS
+2. PostCSS
+3. Autoprefixer
+4. Classnames
+
 ## Available Scripts
 
 In the project directory, you can run:

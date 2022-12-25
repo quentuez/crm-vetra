@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Header from './components/Header/Header';
+import Nav from './components/Nav/Nav';
+import Aside from './components/Aside/Aside';
+import Footer from './components/Footer/Footer';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div class="bg-blue-50">
+      <Header />
+      <Nav />
+      <Aside />
+      <Footer />
+    </div>
   </React.StrictMode>
 );
 

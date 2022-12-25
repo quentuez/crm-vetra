@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Vetra",
+  "name": "CRM template by Vesta",
+  "description": "Website is based on this template - https://vetra.laborasyon.com/demos/default/index.html",
   "icons": [
     {
       "src": "favicon.ico",
