@@ -9,7 +9,7 @@ import Button from "../Button/Button";
 import "../../index.css";
 
 // Assets
-import LogoVerta from "../Logo/LogoVerta.png";
+import logo from "../Logo/logo.svg";
 import notification from "../Icon/notification.png"; //https://www.flaticon.com/free-icon/notification_2645897
 import plus from "../Icon/plus.png"; // https://www.flaticon.com/ru/free-icon/plus_3303893
 import search from "../Icon/search.png"; // https://www.flaticon.com/free-icon/search_711319
@@ -20,46 +20,52 @@ function Header() {
     <header class="flex flex-row">
       <Logo
         class="hover:cursor-pointer"
-        src={LogoVerta}
+        src={logo}
         alt="Logo"
         width="100"
-        height="100"
+        height="32"
       />
       <h1 class="text-2xl font-medium">Overview</h1>
       <form>
-        <input type="search" id="mySearch" name="q" />
-        <Button>
+        {" "}
+        <Button type="button">
           <Icon
-            class="h-3.5 w-3.5"
+            class="h-[14px] w-[14px]"
             src={search}
             alt="Search"
             width="14"
             height="14"
           />
         </Button>
+        <input type="search" id="mySearch" name="q" />
       </form>
-      <Icon
-        class="h-4.5 w-4.5"
-        src={notification}
-        alt="Notification"
-        width="19"
-        height="19"
-      />
-      <Icon
-        class="h-4.5 w-4.5"
-        src={shoppingCart}
-        alt="Shopping Cart"
-        width="19"
-        height="19"
-      />
-      <Button>
+      <Button type="button">
         <Icon
-          class="h-4.5 w-4.5"
-          src={plus}
-          alt="Plus"
+          class="h-[19px] w-[19px]"
+          src={notification}
+          alt="Notification"
           width="19"
           height="19"
         />
+      </Button>
+      <Button type="button">
+        <Icon
+          class="h-[19px] w-[19px]"
+          src={shoppingCart}
+          alt="Shopping Cart"
+          width="19"
+          height="19"
+        />
+      </Button>
+      <Button class="bg-orange-500" type="button">
+        <Icon
+          class="h-[14px] w-[14px]"
+          src={plus}
+          alt="Plus"
+          width="14"
+          height="14"
+        />
+        Add Product
       </Button>
     </header>
   );
