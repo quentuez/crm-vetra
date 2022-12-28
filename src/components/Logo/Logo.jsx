@@ -3,7 +3,7 @@ import React from "react";
 function Logo(props) {
   return (
     <img
-      class={props.class}
+      className={props.className}
       src={props.src}
       alt={props.alt}
       width={props.width}

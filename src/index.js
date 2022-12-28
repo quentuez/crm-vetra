@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div class="bg-blue-50">
+    <div className="bg-blue-50">
       <Header />
       <Nav />
       <Aside />

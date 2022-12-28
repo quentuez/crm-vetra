@@ -17,20 +17,20 @@ import shoppingCart from "../Icon/shoppingCart.png"; // https://www.flaticon.com
 
 function Header() {
   return (
-    <header class="flex flex-row">
+    <header className="flex flex-row">
       <Logo
-        class="hover:cursor-pointer"
+        className="hover:cursor-pointer"
         src={logo}
         alt="Logo"
         width="100"
         height="32"
       />
-      <h1 class="text-2xl font-medium">Overview</h1>
+      <h1 className="text-2xl font-medium">Overview</h1>
       <form>
         {" "}
         <Button type="button">
           <Icon
-            class="h-[14px] w-[14px]"
+            className="h-[14px] w-[14px]"
             src={search}
             alt="Search"
             width="14"
@@ -41,7 +41,7 @@ function Header() {
       </form>
       <Button type="button">
         <Icon
-          class="h-[19px] w-[19px]"
+          className="h-[19px] w-[19px]"
           src={notification}
           alt="Notification"
           width="19"
@@ -50,16 +50,16 @@ function Header() {
       </Button>
       <Button type="button">
         <Icon
-          class="h-[19px] w-[19px]"
+          className="h-[19px] w-[19px]"
           src={shoppingCart}
           alt="Shopping Cart"
           width="19"
           height="19"
         />
       </Button>
-      <Button class="bg-orange-500" type="button">
+      <Button className="bg-orange-500" type="button">
         <Icon
-          class="h-[14px] w-[14px]"
+          className="h-[14px] w-[14px]"
           src={plus}
           alt="Plus"
           width="14"
