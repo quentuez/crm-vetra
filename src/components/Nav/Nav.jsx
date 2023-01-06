@@ -1,24 +1,29 @@
 import React from "react";
 
-// Components
-import Logo from "../Logo/Logo";
-
 // Assets
 import logo from "../Logo/logo.svg";
 
-function Nav() {
+// Components
+import Logo from "../Logo/Logo";
+import UserCard from "../UserCard/UserCard";
+import NavigationMenu from "../NavigationMenu/NavigationMenu";
+
+export default function Nav() {
   return (
-    <div>
-      {" "}
-      <Logo
-        className="hover:cursor-pointer"
-        src={logo}
-        alt="Logo"
-        width="100"
-        height="32"
-      />
-    </div>
+    <nav>
+      <div className="flex h-[90px] items-center px-[20px]">
+        <Logo
+          alt="Logo"
+          className="hover:cursor-pointer"
+          height="24"
+          src={logo}
+          width="100"
+        />
+      </div>
+
+      <UserCard />
+
+      <NavigationMenu />
+    </nav>
   );
 }
-
-export default Nav;

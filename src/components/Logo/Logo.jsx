@@ -1,15 +1,13 @@
 import React from "react";
 
-function Logo(props) {
+export default function Logo({ alt, className, height, src, width }) {
   return (
     <img
-      className={props.className}
-      src={props.src}
-      alt={props.alt}
-      width={props.width}
-      height={props.height}
+      alt={alt}
+      className={className}
+      height={height}
+      src={src}
+      width={width}
     />
   );
 }
-
-export default Logo;

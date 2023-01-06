@@ -1,20 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Header from './components/Header/Header';
-import Nav from './components/Nav/Nav';
-import Aside from './components/Aside/Aside';
-import Footer from './components/Footer/Footer';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Components
+import Aside from "./components/Aside/Aside";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+
+// Styles
+import "./index.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="bg-blue-50">
-      <Header />
-      <Nav />
-      <Aside />
-      <Footer />
+    <div className="flex">
+      <div className="w-1/6 bg-blue-50">
+        <Nav />
+      </div>
+      <div className="w-5/6 bg-blue-50">
+        <Header />
+        <Aside />
+        <Footer />
+      </div>
     </div>
   </React.StrictMode>
 );

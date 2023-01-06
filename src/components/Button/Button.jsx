@@ -1,18 +1,9 @@
-import classNames from "classnames";
 import React from "react";
 
-function Button({ bgColor, textColor, size, type, children }) {
+export default function Button({ className, type = "button", children }) {
   return (
-    <button
-      className={classNames(`bg-${bgColor} text-${textColor}`, {
-        "text-xs": size === "xs",
-        "text-sm": size === "sm",
-      })}
-      type={type}
-    >
+    <button className={className} type={type}>
       {children}
     </button>
   );
 }
-
-export default Button;

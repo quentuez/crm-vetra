@@ -1,14 +1,12 @@
 import React from "react";
 
-function Icon(props) {
+export default function Icon({
+  alt,
+  className = "max-w-none",
+  size = 20,
+  src,
+}) {
   return (
-    <img
-      src={props.src}
-      alt={props.alt}
-      width={props.width}
-      height={props.height}
-    />
+    <img alt={alt} className={className} height={size} src={src} width={size} />
   );
 }
-
-export default Icon;
