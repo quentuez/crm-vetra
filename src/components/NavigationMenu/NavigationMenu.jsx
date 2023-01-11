@@ -20,6 +20,11 @@ import searchPage from "../Icon/searchPage.png"; // https://www.flaticon.com/fre
 import settings from "../Icon/settings.png"; // https://www.flaticon.com/free-icon/setting_2040504
 import todoApp from "../Icon/todoApp.png"; // https://www.flaticon.com/free-icon/smartphone_3942588
 import users from "../Icon/users.png"; // https://www.flaticon.com/free-icon/group_694642
+import content from "../Icon/content.png"; // https://www.flaticon.com/free-icon/content_2503667
+import charts from "../Icon/charts.png"; // https://www.flaticon.com/free-icon/bar-chart_478544
+import extensions from "../Icon/extensions.png"; // https://www.flaticon.com/free-icon/extension_3793602
+import menuItem from "../Icon/menuItem.png"; // https://www.flaticon.com/free-icon/menu_3018944
+import disabled from "../Icon/disabled.png"; // https://www.flaticon.com/free-icon/disabled_2089699
 
 // Components
 import Icon from "../Icon/Icon";
@@ -54,23 +59,21 @@ export default function NavigationMenu() {
   const UserInterface = [
     { id: 1, title: "Components", src: components },
     { id: 2, title: "Forms", src: forms },
-    { id: 3, title: "Content" },
-    { id: 4, title: "Charts" },
-    { id: 5, title: "Extensions" },
+    { id: 3, title: "Content", src: content },
+    { id: 4, title: "Charts", src: charts },
+    { id: 5, title: "Extensions", src: extensions },
   ];
   const Other = [
-    { id: 1, title: "Menu Item" },
-    { id: 2, title: "Disabled" },
+    { id: 1, title: "Menu Item", src: menuItem },
+    { id: 2, title: "Disabled", src: disabled },
   ];
 
   const ECommerceListItem = ECommerce.map((item) => (
-    <li key={item.id} className="flex">
-      <Icon src={item.src} size="22" />
+    <li key={item.id} className="flex px-[20px] py-[10px]">
+      <Icon src={item.src} className="mr-[12px]" />
       <a
         href="#"
-        className={
-          active === true ? "rounded-3xl bg-orange-500 px-[20px] py-[10px]" : ""
-        }
+        className={active === true ? "rounded-3xl bg-orange-500 " : ""}
         onClick={() => setActive(!active)}
       >
         {item.title}
@@ -78,13 +81,11 @@ export default function NavigationMenu() {
     </li>
   ));
   const AppsListItem = Apps.map((item) => (
-    <li key={item.id} className="flex">
-      <Icon src={item.src} size="22" />
+    <li key={item.id} className="flex px-[20px] py-[10px]">
+      <Icon src={item.src} className="mr-[12px]" />
       <a
         href="#"
-        className={
-          active === true ? "rounded-3xl bg-orange-500 px-[20px] py-[10px]" : ""
-        }
+        className={active === true ? "rounded-3xl bg-orange-500 " : ""}
         onClick={() => setActive(!active)}
       >
         {item.title}
@@ -92,13 +93,11 @@ export default function NavigationMenu() {
     </li>
   ));
   const PagesListItem = Pages.map((item) => (
-    <li key={item.id} className="flex">
-      <Icon src={item.src} size="22" />
+    <li key={item.id} className="flex px-[20px] py-[10px]">
+      <Icon src={item.src} className="mr-[12px]" />
       <a
         href="#"
-        className={
-          active === true ? "rounded-3xl bg-orange-500 px-[20px] py-[10px]" : ""
-        }
+        className={active === true ? "rounded-3xl bg-orange-500 " : ""}
         onClick={() => setActive(!active)}
       >
         {item.title}
@@ -106,14 +105,11 @@ export default function NavigationMenu() {
     </li>
   ));
   const UserInterfaceListItem = UserInterface.map((item) => (
-    <li key={item.id} className="flex">
-      {" "}
-      <Icon src={item.src} size="22" />
+    <li key={item.id} className="flex px-[20px] py-[10px]">
+      <Icon src={item.src} className="mr-[12px]" />
       <a
         href="#"
-        className={
-          active === true ? "rounded-3xl bg-orange-500 px-[20px] py-[10px]" : ""
-        }
+        className={active === true ? "rounded-3xl bg-orange-500 " : ""}
         onClick={() => setActive(!active)}
       >
         {item.title}
@@ -121,13 +117,11 @@ export default function NavigationMenu() {
     </li>
   ));
   const OtherListItem = Other.map((item) => (
-    <li key={item.id} className="flex">
-      <Icon src={item.src} size="22" />
+    <li key={item.id} className="flex px-[20px] py-[10px]">
+      <Icon src={item.src} className="mr-[12px]" />
       <a
         href="#"
-        className={
-          active === true ? "rounded-3xl bg-orange-500 px-[20px] py-[10px]" : ""
-        }
+        className={active === true ? "rounded-3xl bg-orange-500 " : ""}
         onClick={() => setActive(!active)}
       >
         {item.title}
@@ -137,18 +131,26 @@ export default function NavigationMenu() {
 
   return (
     <div className="m-[15px]">
-      <small className="ml-[16px] font-normal text-slate-400">E-Commerce</small>
-      <ul>{ECommerceListItem}</ul>
-      <small className="ml-[16px] font-normal text-slate-400">Apps</small>
-      <ul>{AppsListItem}</ul>
-      <small className="ml-[16px] font-normal text-slate-400">Pages</small>
-      <ul>{PagesListItem}</ul>
-      <small className="ml-[16px] font-normal text-slate-400">
+      <h2 className="ml-[16px] px-[20px] pb-[20px] font-normal text-slate-400">
+        E-Commerce
+      </h2>
+      <ul className="px-[20px] py-[10px]">{ECommerceListItem}</ul>
+      <h2 className="ml-[16px] px-[20px] pb-[20px] font-normal text-slate-400">
+        Apps
+      </h2>
+      <ul className="px-[20px] py-[10px]">{AppsListItem}</ul>
+      <h2 className="ml-[16px]  px-[20px] pb-[20px] font-normal text-slate-400">
+        Pages
+      </h2>
+      <ul className="px-[20px] py-[10px]">{PagesListItem}</ul>
+      <h2 className="ml-[16px] px-[20px] pb-[20px] font-normal text-slate-400">
         User Interface
-      </small>
-      <ul>{UserInterfaceListItem}</ul>
-      <small className="ml-[16px] font-normal text-slate-400">Other</small>
-      <ul>{OtherListItem}</ul>
+      </h2>
+      <ul className="px-[20px] py-[10px]">{UserInterfaceListItem}</ul>
+      <h2 className="ml-[16px] px-[20px] pb-[20px] font-normal text-slate-400">
+        Other
+      </h2>
+      <ul className="px-[20px] py-[10px]">{OtherListItem}</ul>
     </div>
   );
 }
