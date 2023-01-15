@@ -3,7 +3,7 @@ import React from "react";
 export default function Icon({
   alt,
   className = "max-w-none",
-  size = 20,
+  size = 24,
   src,
 }) {
   return (
