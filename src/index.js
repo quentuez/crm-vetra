@@ -4,7 +4,6 @@ import reportWebVitals from "./reportWebVitals";
 
 // Components
 import Aside from "./components/Aside/Aside";
-import Content from "./components/Content/Content";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -22,10 +21,7 @@ root.render(
       </div>
       <div className="w-5/6 bg-blue-50">
         <Header />
-        <Main>
-          <Content className="w-1/3" />
-          <Content className="w-2/3" />
-        </Main>
+        <Main />
         <Aside />
         <Footer />
       </div>
