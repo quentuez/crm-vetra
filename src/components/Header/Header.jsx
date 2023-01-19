@@ -10,6 +10,7 @@ import shoppingCart from "../Icon/shoppingCart.png"; // https://www.flaticon.com
 import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
 import NotificationBadge from "../NotificationBadge/NotificationBadge";
+import Title from "../Title/Title";
 
 // Styles
 import "../../index.css";
@@ -17,8 +18,9 @@ import "../../index.css";
 export default function Header() {
   return (
     <header className="flex h-[90px] items-center px-[20px]">
-      <h1 className="mr-[70px] w-[116px] text-2xl font-medium">Overview</h1>
-
+      <Title className="mr-[70px] w-[116px] text-2xl font-medium">
+        Overview
+      </Title>
       <form className="mr-[50px] flex w-full">
         <Button
           className="mr-[3px] rounded-l-lg bg-white px-[20px] py-[10.8px]"

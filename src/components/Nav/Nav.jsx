@@ -2,10 +2,12 @@ import React from "react";
 
 // Assets
 import logo from "../Logo/logo.svg";
+import UserOne from "../ContentWrap/UserOne.png";
 
 // Components
+import ContentWrap from "../ContentWrap/ContentWrap";
+import Image from "../Image/Image";
 import Logo from "../Logo/Logo";
-import UserCard from "../UserCard/UserCard";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 export default function Nav() {
@@ -13,7 +15,7 @@ export default function Nav() {
     <nav>
       <div className="flex h-[90px] items-center px-[20px]">
         <Logo
-          alt="Logo"
+          alt="Logo Vetra"
           className="hover:cursor-pointer"
           height="24"
           src={logo}
@@ -21,7 +23,17 @@ export default function Nav() {
         />
       </div>
 
-      <UserCard />
+      <ContentWrap>
+        <Image
+          alt="UserAvatar"
+          className="mr-[16px] h-[48px] w-[48px] rounded-full"
+          src={UserOne}
+        />
+        <div className="flex flex-col">
+          <span className="font-bold text-orange-500">Dmitry Klimenkov</span>
+          <small className="font-normal text-slate-400">Design Engineer</small>
+        </div>
+      </ContentWrap>
 
       <NavigationMenu />
     </nav>
