@@ -2,7 +2,7 @@ import React from "react";
 
 // Assets
 import logo from "../Logo/logo.svg";
-import UserOne from "../ContentWrap/UserOne.png";
+import UserOne from "../../assets/Image/UserOne.png";
 
 // Components
 import ContentWrap from "../ContentWrap/ContentWrap";
@@ -23,7 +23,7 @@ export default function Nav() {
         />
       </div>
 
-      <ContentWrap>
+      <ContentWrap className="m-[15px] flex items-center rounded-lg bg-white p-[15px]">
         <Image
           alt="UserAvatar"
           className="mr-[16px] h-[48px] w-[48px] rounded-full"

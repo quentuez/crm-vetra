@@ -1,10 +1,10 @@
 import React from "react";
 
 // Assets
-import notification from "../Icon/notification.png"; // https://www.flaticon.com/free-icon/notification_2645897
-import plus from "../Icon/plus.png"; // https://www.flaticon.com/ru/free-icon/plus_3303893
-import search from "../Icon/search.png"; // https://www.flaticon.com/free-icon/search_711319
-import shoppingCart from "../Icon/shoppingCart.png"; // https://www.flaticon.com/free-icon/shopping-cart_1170678
+import notification from "../../assets/Icon/notification.png"; // https://www.flaticon.com/free-icon/notification_2645897
+import plus from "../../assets/Icon/plus.png"; // https://www.flaticon.com/ru/free-icon/plus_3303893
+import search from "../../assets/Icon/search.png"; // https://www.flaticon.com/free-icon/search_711319
+import shoppingCart from "../../assets/Icon/shoppingCart.png"; // https://www.flaticon.com/free-icon/shopping-cart_1170678
 
 // Components
 import Button from "../Button/Button";

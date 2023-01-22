@@ -1,16 +1,178 @@
 import React from "react";
 
+//Assets
+import question from "../../assets/Icon/question.png"; // https://www.flaticon.com/free-icon/question_471664
+import more from "../../assets/Icon/more.png"; // https://www.flaticon.com/free-icon/more_512142
+
 // Components
-import Chart from "../Chart/Chart";
+import Button from "../Button/Button";
 import Content from "../Content/Content";
+import ContentWrap from "../ContentWrap/ContentWrap";
+import DoughnutChart from "../Chart/DoughnutChart/DoughnutChart";
+import Icon from "../Icon/Icon";
+import LineChart from "../Chart/LineChart/LineChart";
+import Subtitle from "../Subtitle/Subtitle";
 
 export default function Main() {
   return (
-    <main className="flex p-[24px]">
-      <Content className="w-1/3">
-        <Chart />
-      </Content>
-      <Content className="w-2/3" />
+    <main>
+      <div className="flex p-[24px]">
+        <ContentWrap className="m-[15px] flex w-2/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Sales Chart</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <LineChart />
+          </Content>
+        </ContentWrap>
+
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+      </div>
+
+      <div className="flex p-[24px]">
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+      </div>
+
+      <div className="flex p-[24px]">
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+      </div>
+
+      <div className="flex p-[24px]">
+        <ContentWrap className="m-[15px] flex w-1/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Sales Chart</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <LineChart />
+          </Content>
+        </ContentWrap>
+
+        <ContentWrap className="m-[15px] flex w-2/3 items-center rounded-lg bg-white p-[15px]">
+          <Content className="w-full">
+            <div className="flex">
+              <Subtitle>Channels</Subtitle>
+              <Button>
+                <Icon alt="Question" src={question} />
+              </Button>
+              <Button>
+                <Icon alt="More" src={more} />
+              </Button>
+            </div>
+            <DoughnutChart />
+          </Content>
+        </ContentWrap>
+      </div>
     </main>
   );
 }

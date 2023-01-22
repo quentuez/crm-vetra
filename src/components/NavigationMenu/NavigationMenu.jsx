@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 
 // Assets
-import authentication from "../Icon/authentication.png"; // https://www.flaticon.com/free-icon/insurance_4448933
-import buyer from "../Icon/buyer.png"; // https://www.flaticon.com/free-icon/deal_2199967
-import chats from "../Icon/chats.png"; // https://www.flaticon.com/free-icon/chat_589708
-import components from "../Icon/components.png"; // https://www.flaticon.com/free-icon/components_4862452
-import customers from "../Icon/customers.png"; // https://www.flaticon.com/free-icon/customer-service_950299
-import dashboard from "../Icon/dashboard.png"; // https://www.flaticon.com/free-icon/dashboard_1828765
-import email from "../Icon/email.png"; // https://www.flaticon.com/free-icon/mail_646094
-import errorPages from "../Icon/errorPages.png"; // https://www.flaticon.com/free-icon/no-results_6179016
-import faq from "../Icon/faq.png"; // https://www.flaticon.com/free-icon/faq_2618540
-import forms from "../Icon/forms.png"; // https://www.flaticon.com/free-icon/contact-form_1698477
-import invoices from "../Icon/invoices.png"; // https://www.flaticon.com/free-icon/invoice_522575
-import orders from "../Icon/orders.png"; // https://www.flaticon.com/free-icon/clipboard_839860
-import pricingTable from "../Icon/pricingTable.png"; // https://www.flaticon.com/free-icon/pricing_3815521
-import products from "../Icon/products.png"; // https://www.flaticon.com/free-icon/product_2652218
-import profile from "../Icon/profile.png"; // https://www.flaticon.com/free-icon/user_1144760
-import searchPage from "../Icon/searchPage.png"; // https://www.flaticon.com/free-icon/search_1674580
-import settings from "../Icon/settings.png"; // https://www.flaticon.com/free-icon/setting_2040504
-import todoApp from "../Icon/todoApp.png"; // https://www.flaticon.com/free-icon/smartphone_3942588
-import users from "../Icon/users.png"; // https://www.flaticon.com/free-icon/group_694642
-import content from "../Icon/content.png"; // https://www.flaticon.com/free-icon/content_2503667
-import charts from "../Icon/charts.png"; // https://www.flaticon.com/free-icon/bar-chart_478544
-import extensions from "../Icon/extensions.png"; // https://www.flaticon.com/free-icon/extension_3793602
-import menuItem from "../Icon/menuItem.png"; // https://www.flaticon.com/free-icon/menu_3018944
-import disabled from "../Icon/disabled.png"; // https://www.flaticon.com/free-icon/disabled_2089699
+import authentication from "../../assets/Icon/authentication.png"; // https://www.flaticon.com/free-icon/insurance_4448933
+import buyer from "../../assets/Icon/buyer.png"; // https://www.flaticon.com/free-icon/deal_2199967
+import chats from "../../assets/Icon/chats.png"; // https://www.flaticon.com/free-icon/chat_589708
+import components from "../../assets/Icon/components.png"; // https://www.flaticon.com/free-icon/components_4862452
+import customers from "../../assets/Icon/customers.png"; // https://www.flaticon.com/free-icon/customer-service_950299
+import dashboard from "../../assets/Icon/dashboard.png"; // https://www.flaticon.com/free-icon/dashboard_1828765
+import email from "../../assets/Icon/email.png"; // https://www.flaticon.com/free-icon/mail_646094
+import errorPages from "../../assets/Icon/errorPages.png"; // https://www.flaticon.com/free-icon/no-results_6179016
+import faq from "../../assets/Icon/faq.png"; // https://www.flaticon.com/free-icon/faq_2618540
+import forms from "../../assets/Icon/forms.png"; // https://www.flaticon.com/free-icon/contact-form_1698477
+import invoices from "../../assets/Icon/invoices.png"; // https://www.flaticon.com/free-icon/invoice_522575
+import orders from "../../assets/Icon/orders.png"; // https://www.flaticon.com/free-icon/clipboard_839860
+import pricingTable from "../../assets/Icon/pricingTable.png"; // https://www.flaticon.com/free-icon/pricing_3815521
+import products from "../../assets/Icon/products.png"; // https://www.flaticon.com/free-icon/product_2652218
+import profile from "../../assets/Icon/profile.png"; // https://www.flaticon.com/free-icon/user_1144760
+import searchPage from "../../assets/Icon/searchPage.png"; // https://www.flaticon.com/free-icon/search_1674580
+import settings from "../../assets/Icon/settings.png"; // https://www.flaticon.com/free-icon/setting_2040504
+import todoApp from "../../assets/Icon/todoApp.png"; // https://www.flaticon.com/free-icon/smartphone_3942588
+import users from "../../assets/Icon/users.png"; // https://www.flaticon.com/free-icon/group_694642
+import content from "../../assets/Icon/content.png"; // https://www.flaticon.com/free-icon/content_2503667
+import charts from "../../assets/Icon/charts.png"; // https://www.flaticon.com/free-icon/bar-chart_478544
+import extensions from "../../assets/Icon/extensions.png"; // https://www.flaticon.com/free-icon/extension_3793602
+import menuItem from "../../assets/Icon/menuItem.png"; // https://www.flaticon.com/free-icon/menu_3018944
+import disabled from "../../assets/Icon/disabled.png"; // https://www.flaticon.com/free-icon/disabled_2089699
 
 // Components
 import Icon from "../Icon/Icon";
