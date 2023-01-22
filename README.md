@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. PostCSS
 3. Autoprefixer
 4. Classnames
-5. Chart.js
+5. Chart.js / react-chartjs-2
 
 ## Available Scripts
 
