@@ -10,7 +10,6 @@ export default function DoughnutChart() {
     labels: ["Social Media", "Google", "Email"],
     datasets: [
       {
-        label: "My First Dataset",
         data: [48, 30, 22],
         backgroundColor: [
           "rgb(255, 99, 132)",
