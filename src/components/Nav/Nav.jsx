@@ -23,7 +23,7 @@ export default function Nav() {
         />
       </div>
 
-      <ContentWrap className="m-[15px] flex items-center rounded-lg bg-white p-[15px]">
+      <ContentWrap>
         <Image
           alt="UserAvatar"
           className="mr-[16px] h-[48px] w-[48px] rounded-full"
