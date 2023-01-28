@@ -1,7 +1,6 @@
 import React from "react";
 
 // Assets
-import logo from "../Logo/logo.svg";
 import UserOne from "../../assets/Image/UserOne.png";
 
 // Components
@@ -12,15 +11,9 @@ import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
 export default function Nav() {
   return (
-    <nav>
-      <div className="flex h-[90px] items-center px-[20px]">
-        <Logo
-          alt="Logo Vetra"
-          className="hover:cursor-pointer"
-          height="24"
-          src={logo}
-          width="100"
-        />
+    <nav className="w-[350px]">
+      <div className="flex h-[90px] items-center px-[24px] pb-[8px]">
+        <Logo />
       </div>
 
       <ContentWrap>

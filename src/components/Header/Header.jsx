@@ -12,9 +12,6 @@ import Icon from "../Icon/Icon";
 import NotificationBadge from "../NotificationBadge/NotificationBadge";
 import Title from "../Title/Title";
 
-// Styles
-import "../../index.css";
-
 export default function Header() {
   return (
     <header className="flex h-[90px] items-center px-[20px]">
