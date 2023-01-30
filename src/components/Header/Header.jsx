@@ -14,37 +14,34 @@ import Title from "../Title/Title";
 
 export default function Header() {
   return (
-    <header className="flex h-[90px] items-center px-[20px]">
+    <header className="flex h-[90px] items-center px-5">
       <Title className="mr-[70px] w-[116px] text-2xl font-medium">
         Overview
       </Title>
       <form className="mr-[50px] flex w-full">
-        <Button
-          className="mr-[3px] rounded-l-lg bg-white px-[20px] py-[10.8px]"
-          type="submit"
-        >
-          <Icon alt="Search" src={search} />
+        <Button className="mr-1 rounded-l-lg bg-white px-5 py-3" type="submit">
+          <Icon alt="Search Icon" src={search} />
         </Button>
         <input
-          className="w-full rounded-r-lg bg-white px-[20px] py-[10.8px]"
+          className="w-full rounded-r-lg bg-white px-5 py-3"
           placeholder="Search..."
           type="search"
         />
       </form>
 
-      <Button className="relative px-[20px]">
+      <Button className="relative px-5">
         <NotificationBadge />
-        <Icon alt="Notification" src={notification} />
+        <Icon alt="Notification Icon" src={notification} />
       </Button>
 
-      <Button className="relative px-[20px]">
+      <Button className="relative px-5">
         <NotificationBadge />
-        <Icon alt="Shopping Cart" src={shoppingCart} />
+        <Icon alt="Shopping Cart Icon" src={shoppingCart} />
       </Button>
 
       <form>
-        <Button className="flex h-[45px] w-[155px] items-center rounded-lg bg-orange-500 px-[20px] py-[10.8px] text-white hover:bg-orange-600">
-          <Icon alt="Plus" className="mr-[9px]" size="14" src={plus} />
+        <Button className="flex h-[45px] w-[155px] items-center rounded-lg bg-orange-500 px-5 py-3 text-white hover:bg-orange-600">
+          <Icon alt="Plus Icon" className="mr-2" size="14" src={plus} />
           Add Product
         </Button>
       </form>

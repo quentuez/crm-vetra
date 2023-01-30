@@ -1,9 +1,5 @@
 import React from "react";
 
 export default function ContentWrap({ children }) {
-  return (
-    <div className="m-[15px] flex items-center rounded-lg bg-white p-[15px]">
-      {children}
-    </div>
-  );
+  return <div className="m-4 rounded-lg bg-white p-4">{children}</div>;
 }

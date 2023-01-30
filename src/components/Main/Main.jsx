@@ -6,7 +6,6 @@ import question from "../../assets/Icon/question.png"; // https://www.flaticon.c
 
 // Components
 import Button from "../Button/Button";
-import Content from "../Content/Content";
 import ContentWrap from "../ContentWrap/ContentWrap";
 import DoughnutChart from "../Chart/DoughnutChart/DoughnutChart";
 import Icon from "../Icon/Icon";
@@ -16,89 +15,31 @@ import Subtitle from "../Subtitle/Subtitle";
 export default function Main() {
   return (
     <main>
-      <div className="flex p-[24px]">
+      <div className="flex p-6">
         <ContentWrap>
-          <Content className="w-full">
-            <div className="flex">
-              <Subtitle>Sales Chart</Subtitle>
-              <Button>
-                <Icon alt="Question" src={question} />
-              </Button>
-              <Button>
-                <Icon alt="More" src={more} />
-              </Button>
-            </div>
-            <LineChart />
-          </Content>
-        </ContentWrap>
-
-        <ContentWrap>
-          <Content className="w-full">
-            <div className="flex">
-              <Subtitle>Channels</Subtitle>
-              <Button>
-                <Icon alt="Question" src={question} />
-              </Button>
-              <Button>
-                <Icon alt="More" src={more} />
-              </Button>
-            </div>
-            <DoughnutChart />
-          </Content>
-        </ContentWrap>
-      </div>
-
-      <div className="flex p-[24px]">
-        <ContentWrap>
-          <Content className="w-full">
-            <div className="flex">
+          <div className="flex">
+            <Subtitle>Sales Chart</Subtitle>
+            <Button>
               <Icon alt="Question" src={question} />
-              <Button>
-                <Icon alt="More" src={more} />
-              </Button>
-            </div>
-            <div className="flex">
-              <Subtitle>Orders</Subtitle>
-            </div>
-            <div className="flex">
-              <p>310</p>
-            </div>
-            <div className="flex">
-              <p>Over last month 1.4%</p>
-            </div>
-          </Content>
+            </Button>
+            <Button>
+              <Icon alt="More" src={more} />
+            </Button>
+          </div>
+          <LineChart />
         </ContentWrap>
 
         <ContentWrap>
-          <Content className="w-full">
-            <div className="flex">
+          <div className="flex">
+            <Subtitle>Channels</Subtitle>
+            <Button>
               <Icon alt="Question" src={question} />
-              <Button>
-                <Icon alt="More" src={more} />
-              </Button>
-            </div>
-            <div className="flex">
-              <Subtitle>Sales</Subtitle>
-            </div>
-            <div className="flex">
-              <p>$3.759,00</p>
-            </div>
-            <div className="flex">
-              <p>Over last month 2.4%</p>
-            </div>
-          </Content>
-        </ContentWrap>
-
-        <ContentWrap>
-          <Content className="w-full">
-            <div className="flex">
-              <Subtitle>Recent Reviews</Subtitle>
-              <Button>View All</Button>
-            </div>
-            <div className="flex">
-              <Content>s</Content>
-            </div>
-          </Content>
+            </Button>
+            <Button>
+              <Icon alt="More" src={more} />
+            </Button>
+          </div>
+          <DoughnutChart />
         </ContentWrap>
       </div>
     </main>
