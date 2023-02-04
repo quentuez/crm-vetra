@@ -18,10 +18,16 @@ export default function Header() {
       <Title className="mr-[70px] w-[116px] text-2xl font-medium">
         Overview
       </Title>
-      <form className="mr-[50px] flex w-full">
+      <form
+        className="mr-[50px] flex w-full"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <Button className="mr-1 rounded-l-lg bg-white px-5 py-3" type="submit">
           <Icon alt="Search Icon" src={search} />
         </Button>
+
         <input
           className="w-full rounded-r-lg bg-white px-5 py-3"
           placeholder="Search..."
