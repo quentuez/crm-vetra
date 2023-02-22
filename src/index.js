@@ -17,7 +17,7 @@ root.render(
       <div className="flex bg-blue-50">
         <Navigation />
 
-        <div>
+        <div className="w-full">
           <Header />
           <Main />
         </div>

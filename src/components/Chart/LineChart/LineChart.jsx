@@ -67,10 +67,20 @@ export default function LineChart() {
         max: 80,
       },
     },
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "bottom",
+        labels: {
+          usePointStyle: true,
+        },
+        pointStyle: "circle",
+      },
+    },
   };
   return (
     <div>
-      <Line options={options} data={data} />
+      <Line options={options} data={data} height={350} />
     </div>
   );
 }

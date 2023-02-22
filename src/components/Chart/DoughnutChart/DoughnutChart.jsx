@@ -21,9 +21,22 @@ export default function DoughnutChart() {
     ],
   };
 
+  const options = {
+    plugins: {
+      legend: {
+        position: "bottom",
+        labels: {
+          usePointStyle: true,
+        },
+        pointStyle: "circle",
+      },
+    },
+    maintainAspectRatio: false,
+  };
+
   return (
     <div>
-      <Doughnut data={data} />
+      <Doughnut data={data} height={350} options={options} />
     </div>
   );
 }

@@ -37,17 +37,17 @@ export default function Header() {
 
       <Button className="relative px-5">
         <NotificationBadge />
-        <Icon alt="Notification Icon" src={notification} />
+        <Icon alt="Notification Icon" size="24" src={notification} />
       </Button>
 
       <Button className="relative px-5">
         <NotificationBadge />
-        <Icon alt="Shopping Cart Icon" src={shoppingCart} />
+        <Icon alt="Shopping Cart Icon" size="24" src={shoppingCart} />
       </Button>
 
       <form>
         <Button className="flex h-[45px] w-[155px] items-center rounded-lg bg-orange-500 px-5 py-3 text-white hover:bg-orange-600">
-          <Icon alt="Plus Icon" className="mr-2" size="14" src={plus} />
+          <Icon alt="Plus Icon" className="mr-2" src={plus} />
           Add Product
         </Button>
       </form>
