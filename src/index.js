@@ -4,8 +4,10 @@ import { BrowserRouter } from "react-router-dom";
 
 // Components
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
 import Navigation from "./components/Navigation/Navigation";
+
+// Pages
+import Main from "./pages/Main/Main";
 
 // Styles
 import "./assets/styles/index.css";

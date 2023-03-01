@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import NavigationModalContent from "../NavigationModalContent/NavigationModalContent";
 
 export default function Portal() {
   const [showModal, setShowModal] = useState(false);

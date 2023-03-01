@@ -40,18 +40,18 @@ export default function LineChart() {
     ],
     datasets: [
       {
-        label: "Orders",
-        data: [78, 75, 73, 78, 75, 73, 77, 74, 75, 77, 71, 75],
-        tension: 0.4,
-        borderColor: "rgb(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-      },
-      {
         label: "Sales",
         data: [65, 60, 62, 69, 71, 65, 68, 67, 60, 61, 59, 64],
         tension: 0.4,
-        borderColor: "rgb(53, 162, 235)",
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
+        borderColor: "rgb(255,127,80)",
+        backgroundColor: "rgb(255,127,80, 1)",
+      },
+      {
+        label: "Order",
+        data: [78, 75, 73, 78, 75, 73, 77, 74, 75, 77, 71, 75],
+        tension: 0.4,
+        borderColor: "rgb(50,205,50)",
+        backgroundColor: "rgba(50,205,50, 1)",
       },
     ],
   };
