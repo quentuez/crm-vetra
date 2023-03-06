@@ -36,7 +36,7 @@ export default function DoughnutChart() {
 
   return (
     <div>
-      <Doughnut data={data} height={350} options={options} />
+      <Doughnut data={data} height={232} options={options} />
     </div>
   );
 }
